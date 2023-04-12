@@ -6,13 +6,13 @@ import React from "react";
 
 export function App() {
 
-  return (
-      <div className={"bg-primary text-white"}>
-          <Router>
-            <Home path="/" />
-            <Product path="/product/:id" />
-            <Products path="/products" />
-          </Router>
-      </div>
-  )
+    return (
+        <div className={"bg-primary text-white"}>
+            <Router>
+                <Home path="/" />
+                <Product path="/product/:id" />
+                <Products path="/products" />
+            </Router>
+        </div>
+    )
 }
