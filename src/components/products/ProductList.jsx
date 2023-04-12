@@ -20,7 +20,7 @@ export function ProductList() {
                                 src={product.image}
                                 alt={product.model + " image"}/>
                             <img
-                                src={"public/pied.webp"}
+                                src={"pied.webp"}
                                 alt={product.model + " image"}/>
                             <h3 className={"font-thin"}>à partir de {product.price} €</h3>
                         </div>

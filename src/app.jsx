@@ -3,13 +3,13 @@ import {Products} from "./pages/Products.jsx";
 import {Home} from "./pages/Home.jsx";
 import {Product} from "./pages/Product.jsx";
 import React from "react";
-import {Navbar} from "./components/layout/navbar.jsx";
+import HeaderLayout from "./components/layout/headerLayout";
 
 export function App() {
 
     return (
         <div className={"bg-primary text-white"}>
-            <Navbar/>
+            <HeaderLayout/>
             <Router>
                 <Home path="/" />
                 <Product path="/product/:id" />

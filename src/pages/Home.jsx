@@ -7,7 +7,7 @@ export function Home() {
         return (
             <>
                 <div className={"w-full h-screen"}>
-                    <img src={heroImage} alt={'car on top'} className={"w-full h-full object-cover"}/>
+                    <img src={heroImage} width={'100vw'} height={'100vh'} alt={'car on top'} className={"w-full h-full object-cover"}/>
                 </div>
                 <div className={"container"}>
                     {/*first section, video*/}
