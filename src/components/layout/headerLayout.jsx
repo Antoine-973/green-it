@@ -22,7 +22,7 @@ export default function () {
                </div>
 
                <div className={"hidden lg:block "}>
-                   <a href="/achat" className={"block px-6 py-3 rounded-full bg-secondary text-white text-center"}>
+                   <a href="/achat" className={"block px-4 py-2 btn-clip bg-secondary text-white text-center"} >
                        Acheter maintenant
                    </a>
                </div>
@@ -53,7 +53,7 @@ export default function () {
                             </li>
                         </ul>
                         <div className={"border-t py-8 px-6"}>
-                            <a href="/achat" className={"block px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-center"}>
+                            <a href="/achat" className={"block px-4 py-2 btn-clip bg-secondary text-white text-center"}>
                                 Acheter maintenant
                             </a>
                         </div>
