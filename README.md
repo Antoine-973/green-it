@@ -2,6 +2,12 @@
 
 # GET STARTED DEV
 
+## Install dependencies
+
+```bash
+npm install
+```
+
 ## Watch tailwind
 
 ```bash

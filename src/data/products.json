@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "price": 2000,
+    "model": "PACKARD",
+    "brand": "PACKARD",
+    "category": "TACOT",
+    "description": "Le Packard est un véhicule de type voiture de tourisme, produit par la marque Packard de 1899 à 1956. Il est considéré comme le premier véhicule de tourisme américain.",
+    "image": "public/packard.webp"
+  },
+  {
+    "id": 2,
+    "price": 4000,
+    "model": "JETSON",
+    "brand": "JETSON",
+    "category": "OVNI",
+    "description": "L'OVNI JETSON est un véhicule non identifié.",
+    "image": "public/jetson.webp"
+  },
+  {
+    "id": 3,
+    "price": 40000,
+    "model": "720S",
+    "brand": "MC LAREN",
+    "category": "SPORTIVE",
+    "description": "La McLaren 720S est une voiture de sport produite par le constructeur automobile britannique McLaren Automotive. Elle est présentée au salon de Genève 2017 et commercialisée en 2018.",
+    "image": "public/720s.webp"
+  },
+  {
+    "id": 4,
+    "price": 60000,
+    "model": "M3 GT2",
+    "brand": "BMW",
+    "category": "SPORTIVE",
+    "description": "La BMW M3 GT2 est une voiture de course de la marque BMW, produite par BMW Motorsport. Elle est basée sur la BMW M3 E92.",
+    "image": "public/gt2.webp"
+  },
+  {
+    "id": 5,
+    "price": 225000,
+    "model": "INVADER",
+    "brand": "HOT WHEELS",
+    "category": "TANK",
+    "description": "Le tank Invader est un véhicule de type tank, produit par la marque Hot Wheels de 1995 à 2005.",
+    "image": "public/invader.webp"
+  },
+  {
+    "id": 6,
+    "price": 35000,
+    "model": "RIVITED",
+    "brand": "HOT WHEELS",
+    "category": "SUV",
+    "description": "Le SUV Rivited est un véhicule de type SUV, produit par la marque Hot Wheels de 1995 à 2005.",
+    "image": "public/rivited.webp"
+  }
+]
