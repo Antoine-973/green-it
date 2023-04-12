@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind utilities;
+
+.btn-clip {
+    transition: clip-path 150ms ease-in-out ;
+    clip-path: polygon(12px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 12px), calc(100% - 12px) calc(100% + 1px), -1px calc(100% + 1px), -1px 12px);
+}
+
+.btn-clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+}
