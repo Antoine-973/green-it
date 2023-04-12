@@ -7,7 +7,7 @@ export function Home() {
         return (
             <>
                 <div className={"w-full h-screen"}>
-                    <img src={heroImage} width={'100vw'} height={'100vh'} alt={'car on top'} className={"w-full h-full object-cover"}/>
+                    <img src={heroImage} width={'100%'} height={'100%'} alt={'car on top'} className={"w-full h-full object-cover"}/>
                 </div>
                 <div className={"container"}>
                     {/*first section, video*/}
@@ -95,7 +95,7 @@ export function Home() {
                             <picture>
                                 <source srcSet={heroImage} type="image/jpg" media={"(min-width: 1200px)"}/>
                                 <source srcSet={heroImage} type="image/jpg" media={"(min-width: 600px)"}/>
-                                <img src={heroImage} alt={'test'} className={""} style={{width: '80%'}}/>
+                                <img src={heroImage} alt={'test'} width={'80%'} height={'80%'}/>
                             </picture>
                         </div>
                     </div>

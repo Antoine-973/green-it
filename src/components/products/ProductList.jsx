@@ -26,7 +26,7 @@ export function ProductList() {
                                 width={280}
                                 height={150}
                                 alt={product.model + " image"}/>
-                            <h3 className={"font-thin"}>à partir de {product.price} €</h3>
+                            <p className={"font-thin"}>à partir de {product.price} €</p>
                         </div>
                     ))}
                 </div>
