@@ -16,40 +16,50 @@ export default function () {
                    <div className="text-sm lg:flex-grow">
                        <a href="/products"
                           className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
-                           products
+                           Voitures
                        </a>
                    </div>
                </div>
+
+               <div className={"hidden lg:block "}>
+                   <a href="/achat" className={"block px-6 py-3 rounded-full bg-secondary text-white text-center"}>
+                       Acheter maintenant
+                   </a>
+               </div>
            </div>
 
-               <div className="block lg:hidden">
-                   <input type="checkbox" name="agree" id="agree" className={"peer"} hidden />
-                   <label htmlFor="agree" className="cursor-pointer flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                       <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-                       </svg>
-                   </label>
-
-                     <div className="peer-checked:translate-x-0  fixed inset-0 w-[calc(100%-15rem)] translate-x-[-100%] transition duration-300 bg-black border-r shadow-xl  ">
-                            <div className="flex flex-col h-full text-teal-200 ">
-                                <ul className={"px-4 py-8 space-y-8"}>
-                                    <li>
-                                        <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
-                                            <a href="/" className={"flex flex-row items-center justify-between"}>
-                                                <img src={logo} width={80} height={80} alt={"Logo de roue chaude"} className={"mx-5"}/>
-                                                <span className="font-semibold text-xl tracking-tight">Roues Chaudes</span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="/products"  >
-                                            <span className="block px-4 py-2 text-sm hover:text-white">Products</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                     </div>
+           <div className="block lg:hidden">
+               <input type="checkbox" name="agree" id="agree" className={"peer"} hidden />
+               <label htmlFor="agree" className="cursor-pointer flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                   <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                   </svg>
+               </label>
+               <div className="peer-checked:translate-x-0  fixed inset-0 w-[calc(100%-5rem)] translate-x-[-100%] transition duration-300 bg-black border-r shadow-xl  ">
+                    <div className="flex flex-col h-full flex justify-between text-teal-200 ">
+                        <ul className={"px-4 py-8 space-y-8"}>
+                            <li>
+                                <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
+                                    <a href="/" className={"flex flex-row items-center justify-between"}>
+                                        <img src={logo} width={80} height={80} alt={"Logo de roue chaude"} className={"mx-5"}/>
+                                        <span className="font-semibold text-xl tracking-tight">Roues Chaudes</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/products"  >
+                                    <span className="block px-4 py-2 text-sm hover:text-white">Voitures</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div className={"border-t py-8 px-6"}>
+                            <a href="/achat" className={"block px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white text-center"}>
+                                Acheter maintenant
+                            </a>
+                        </div>
+                    </div>
                </div>
+           </div>
 
         </nav>
     )
