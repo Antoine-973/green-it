@@ -2,9 +2,9 @@ export default function () {
     return(
         <footer className={"bg-gray-900 py-4 "}>
             <div className={"container mx-auto px-4"}>
-                <div className={"flex flex-row  items-center md:justify-between pb-8 justify-center"}>
+                <div className={"flex flex-col lg:flex-row  md:justify-between pb-8 "}>
                     <div className={"px-4"}>
-                        <ul className={"flex flex-col flex-wrap list-none md:justify-end  justify-center"}>
+                        <ul className={"flex flex-col pb-8 lg:pb-0"}>
                             <li>
                                 <p className={"text-xl py-1 px-3"}>Plan du site</p>
                             </li>
@@ -23,8 +23,8 @@ export default function () {
                             </li>
                         </ul>
                     </div>
-                    <div className={" px-4"}>
-                        <ul className={"flex flex-col flex-wrap list-none md:justify-end  justify-center"}>
+                    <div className={" px-4 pb-8 lg:pb-0"}>
+                        <ul className={"flex flex-col "}>
                             <li>
                                 <p className={"text-xl py-1 px-3"}>Nous contacter</p>
                             </li>
@@ -43,7 +43,7 @@ export default function () {
                             </li>
                         </ul>
                     </div>
-                    <div className={"w-1/4 px-4"}>
+                    <div className={"lg:w-1/4 px-4 pb-8 lg:pb-0"}>
                         <p className={"text-sm py-1 px-3 text-justify"}>
                             Les roues chaudes, site de vente de voitures mignatures. Tous droits réservés.
                         </p>
