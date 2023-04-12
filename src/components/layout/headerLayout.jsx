@@ -3,11 +3,11 @@ export default function () {
 
     return(
         <nav className={"flex items-center justify-between bg-black bg-opacity-20 flex-wrap bg-white p-6 fixed top-0 left-0 w-full z-10"}>
-           <div className={" flex px-6 md:px-12 lg:container lg:px-6 "}>
+           <div className={" flex  md:px-12 lg:container lg:px-6 "}>
 
                <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                    <a href="/" className={"flex flex-row items-center justify-between"}>
-                       <img src={logo} width={80} height={80} alt={"Logo de roue chaude"} className={"mx-5"}/>
+                       <img src={logo} width={80} height={80} alt={"Logo de roue chaude"} className={"mr-5"}/>
                        <span className="font-semibold text-xl tracking-tight">Roues Chaudes</span>
                    </a>
                </div>
