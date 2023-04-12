@@ -4,7 +4,7 @@ export function ProductList() {
 
     return (
         <>
-            <div className={"grid grid-cols-1 gap-8 p-8 text-center"}>
+            <div className={"grid grid-cols-1 gap-8 p-8 text-center pt-32"}>
                 <h1 className={"text-xl font-extrabold italic"}>CONSTITUEZ VOTRE COLLECTION</h1>
                 <p>
                     Débloquez et collectionnez plus de 60 véhicules parmi les meilleurs de l'univers de Hot WheelsTM.

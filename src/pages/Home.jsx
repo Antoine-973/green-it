@@ -1,13 +1,11 @@
-import heroImage from '../../public/hero-background.webp';
-import logo from '../../public/logo.webp';
-import videos from '../../public/home.mp4';
+import heroImage from '/hero-background.webp';
+import videos from '/home.mp4';
 import '../style/home.css';
-import {Navbar} from "../components/layout/navbar";
+
 
 export function Home() {
         return (
             <>
-                <Navbar/>
                 <div className={"w-full h-screen"}>
                     <img src={heroImage} alt={'car on top'} className={"w-full h-full object-cover"}/>
                 </div>
