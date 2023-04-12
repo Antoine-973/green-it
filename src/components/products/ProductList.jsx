@@ -18,9 +18,13 @@ export function ProductList() {
                             <h1 className={"font-bold text-3xl font-bold italic"}>{product.model}</h1>
                             <img
                                 src={product.image}
+                                width={280}
+                                height={180}
                                 alt={product.model + " image"}/>
                             <img
                                 src={"pied.webp"}
+                                width={280}
+                                height={150}
                                 alt={product.model + " image"}/>
                             <h3 className={"font-thin"}>à partir de {product.price} €</h3>
                         </div>
