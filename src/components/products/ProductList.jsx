@@ -6,11 +6,10 @@ export function ProductList() {
     return (
         <>
             <div className={"flex flex-col items-center w-3/4"}>
-                <div className="h-96 carousel carousel-vertical rounded-box">
-
+                <div className="w-64 sm:w-2/3 sm:h-96 carousel sm:carousel-vertical rounded-box">
                     {products.map((product) => (
-                        <div className={"carousel-item h-full flex relative"}>
-                            <div className={"absolute top-0 flex items-center gap-16"}>
+                        <div className={"carousel-item w-full sm:h-full flex flex-col sm:items-center gap-2"}>
+                            <div className={"flex flex-col sm:flex-row items-center gap-4"}>
                                 <h1 className={"font-bold text-3xl font-bold italic"}>{product.model}</h1>
                                 <p className={"font-thin"}>à partir de {product.price} €</p>
                                 <Link className={"block px-4 py-2 btn-clip bg-secondary text-white text-center"} href={"/product/" + product.id}>
@@ -18,19 +17,21 @@ export function ProductList() {
                                 </Link>
                             </div>
                             <img
-                                className={"w-full"}
+                                className={"z-10"}
                                 src={product.image}
                                 alt={product.model + " image"}
+                                width={500}
+                                height={180}
                             />
                         </div>
                     ))}
                 </div>
                 <img
-                    width={500}
-                    height={240}
-                    className={"-mt-20"}
+                    className={"-mt-8 sm:-mt-20 md:-mt-28 lg:-mt-20 z-5 sm:w-1/2"}
                     src={"pied.webp"}
-                    alt={"Piedestal image"}/>
+                    alt={"Piedestal image"}
+                    width={280}
+                    height={180}/>
             </div>
         </>
     )
