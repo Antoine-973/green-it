@@ -1,5 +1,4 @@
 import products from '../data/products.json';
-import {Link} from "preact-router";
 
 export function Product() {
 
@@ -15,7 +14,7 @@ export function Product() {
             </div>
             <div className={"flex flex-col sm:flex-row items-center"}>
                 <div>
-                    <img className={"drop-shadow-xl"} src={'../' + currentProduct.image} alt={currentProduct.model + " image"}/>
+                    <img className={"drop-shadow-xl"} width={800} height={450} src={'../' + currentProduct.image} alt={currentProduct.model + " image"}/>
                 </div>
                 <div className={"flex flex-col items-center gap-6"}>
                     <p>{currentProduct.description}</p>

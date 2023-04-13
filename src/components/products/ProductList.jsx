@@ -21,7 +21,7 @@ export function ProductList() {
                                 src={product.image}
                                 alt={product.model + " image"}
                                 width={500}
-                                height={180}
+                                height={280}
                             />
                         </div>
                     ))}
