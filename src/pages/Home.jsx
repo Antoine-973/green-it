@@ -83,7 +83,7 @@ export function Home() {
                     </div>
                     {/*first section, video*/}
                     <h2 className={"text-2xl text-center my-10"}>Une démonstration de nos modèles</h2>
-                    <div className={"flex flex-row justify-center align-middle p-20"}>
+                    <div className={"flex flex-row justify-center align-middle "}>
                         <video
                             poster={poster}
                             preload={'none'}  controls className={"rounded-md w-full md:w-3/4"}>
@@ -103,7 +103,7 @@ export function Home() {
                             <img src={interior} alt={'circuit example'} width={1980} height={1319}/>
                         </div>
                         <div className={"mb-5 md:mb-0"}>
-                            <h3 className={"text-2xl m-4"}>
+                            <h3 className={"text-2xl m-4 md:ml-8 text-left"}>
                                 Un interieur de qualité
                             </h3>
                             <p className={"md:ml-8 text-left"}>
