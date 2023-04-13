@@ -5,6 +5,7 @@ import {Product} from "./pages/Product.jsx";
 import React from "react";
 import HeaderLayout from "./components/layout/headerLayout";
 import FooterLayout from "./components/layout/footerLayout.jsx";
+import MentionsLegales from "./pages/MentionsLegales.jsx";
 
 export function App() {
 
@@ -15,6 +16,7 @@ export function App() {
                 <Home path="/" />
                 <Product path="/product/:id" />
                 <Products path="/products" />
+                <MentionsLegales path="/mentions-legales" />
             </Router>
             <FooterLayout/>
         </div>
