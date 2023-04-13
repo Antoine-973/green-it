@@ -32,7 +32,7 @@ export function Home() {
                         </video>
                     </div>
                     {/*seconde section, carousel*/}
-                    <div className="carousel w-full">
+                    <div className="carousel w-3/4 mx-auto">
                         <div id="slide1" className="carousel-item relative w-full">
                             <img width={1280} height={720} src={carroussel1} alt={"Image carrousel 1"} className="w-full"/>
                             <div
