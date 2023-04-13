@@ -1,4 +1,4 @@
-import logo from "/hot_wheels_logo.webp";
+import logo from "/logo.webp";
 
 export default function () {
 
@@ -10,7 +10,7 @@ export default function () {
 
                     <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                         <a href="/" className={"flex flex-row items-center justify-between"}>
-                            <img src={logo} width={100} alt={"Logo de roue chaude"} className={"mr-5"}/>
+                            <img src={logo} width={100} height={50} alt={"Logo de roue chaude"} className={"mr-5"}/>
                             <span className="hidden sm:block font-semibold text-2xl tracking-tight">Roues Chaudes</span>
                         </a>
                     </div>
