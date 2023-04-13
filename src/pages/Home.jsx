@@ -6,11 +6,12 @@ import invader from '/invader.webp';
 export function Home() {
         return (
             <>
-                <div className={"w-full h-screen relative"}>
-                    <div className={"absolute top-1/2 left-1/2 transform translate-x-1/2 translate-y-1/2 z-10 "}>
-                        <h1 className={"flex flex-row text-2xl"}>Roues Chaudes !</h1>
+                <div className={"w-full h-screen  bg-[url(/hero-background.webp)] bg-cover"}>
+                    <div className={"flex items-center h-full"}>
+                        <div className={"container mx-auto px-4"}>
+                            <h1 className={"flex flex-row text-2xl"}>Roues Chaudes !</h1>
+                        </div>
                     </div>
-                    <img src={heroImage} width={'100%'} height={'100%'} alt={'car on top'} className={"absolute top-0 left-0 w-full h-full object-cover"}/>
                 </div>
                 <div className={"container"}>
                     {/*first section, video*/}
