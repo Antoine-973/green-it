@@ -10,14 +10,14 @@ export default function () {
                     <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                         <a href="/" className={"flex flex-row items-center justify-between"}>
                             <img src={logo} width={100} alt={"Logo de roue chaude"} className={"mr-5"}/>
-                            <span className="font-semibold text-xl tracking-tight">Roues Chaudes</span>
+                            <span className="font-semibold text-2xl tracking-tight">Roues Chaudes</span>
                         </a>
                     </div>
 
-                    <div className="hidden lg:block  w-full flex-grow lg:flex lg:items-center lg:w-auto text-teal-200 ">
+                    <div className="hidden lg:block  w-full flex-grow lg:flex lg:items-center lg:w-auto text-white">
                         <div className="text-sm lg:flex-grow">
                             <a href="/products"
-                               className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                               className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mx-4 text-xl">
                                 Voitures
                             </a>
                         </div>
