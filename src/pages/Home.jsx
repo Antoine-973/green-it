@@ -90,7 +90,20 @@ export function Home() {
                             <source src={videos} type="video/mp4"/>
                         </video>
                     </div>
-                    {/*section description truck*/}
+                    {/*section description texte*/}
+                    <div className={"flex flex-col p-4 md:p-20 content_block text-left md:text-justify bg-gray-900 my-6"}>
+                        <h3 className={"text-2xl mb-6"}>
+                            Nos valeurs !
+                        </h3>
+                        <p>
+                            Chez Hot Wheels, nous sommes dévoués à fournir des voitures de qualité
+                            supérieure, fabriquées avec des matériaux de haute qualité pour garantir une longue durée de
+                            vie. Nos voitures sont également équipées de fonctionnalités impressionnantes
+                            telles que des pneus en caoutchouc véritable, des suspensions fonctionnelles et des détails
+                            de carrosserie incroyablement réalistes.
+                        </p>
+                    </div>
+                    {/*section description*/}
                     <div className={"block md:flex md:flex-col md:p-20 text-center md:justify-center md:align-middle md:items-center"}>
                         <h3 className={"text-2xl mb-6"}>
                             Tester nos voitures sur nos parcours !
@@ -112,16 +125,6 @@ export function Home() {
                                 nombreuses autres options.
                             </p>
                         </div>
-                    </div>
-                    {/*section description texte*/}
-                    <div className={"flex flex-col p-4 md:p-20 content_block text-left md:text-justify"}>
-                        <p>
-                            Chez Hot Wheels, nous sommes dévoués à fournir des voitures miniatures de qualité
-                            supérieure, fabriquées avec des matériaux de haute qualité pour garantir une longue durée de
-                            vie. Nos voitures miniatures sont également équipées de fonctionnalités impressionnantes
-                            telles que des pneus en caoutchouc véritable, des suspensions fonctionnelles et des détails
-                            de carrosserie incroyablement réalistes.
-                        </p>
                     </div>
                 </div>
             </>
