@@ -6,7 +6,7 @@ export default function () {
         <nav className={"fixed w-full m-auto top-0 left-0 z-30  "}>
             <div className={"header-container w-full flex flex-col relative z-30   "} >
 
-                <div className={" flex absolute top-8 md:px-12 lg:container lg:px-6 z-30 "}>
+                <div className={" flex absolute top-2 md:top-8 md:px-12 lg:container lg:px-6 z-30 "}>
 
                     <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                         <a href="/" className={"flex flex-row items-center justify-between"}>
@@ -25,7 +25,7 @@ export default function () {
                     </div>
                 </div>
 
-                <div className="absolute top-8  z-30 w-full lg:hidden">
+                <div className="absolute top-4 z-30 w-full lg:hidden">
 
                     <input type="checkbox" name="agree" id="agree" className={"peer"} hidden />
                     <label htmlFor="agree" className="absolute right-8 cursor-pointer flex items-end px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
