@@ -26,12 +26,17 @@ export function ProductList() {
                         </div>
                     ))}
                 </div>
-                <img
-                    className={"-mt-8 sm:-mt-20 md:-mt-28 lg:-mt-20 z-5 sm:w-1/2"}
-                    src={"pied.webp"}
-                    alt={"Piedestal image"}
-                    width={280}
-                    height={180}/>
+                <picture >
+                    <source media={"(min-width: 640px)"} srcSet={"pied.webp"}  type={"image/webp"}/>
+                    <img
+                        className={"-mt-8 sm:-mt-20 md:-mt-28 lg:-mt-20 z-5"}
+                        src={"piedistallo-2x.webp"}
+                        alt={"Piedestal image"}
+                        width={350}
+                        height={200}/>
+                </picture>
+
+
             </div>
         </>
     )

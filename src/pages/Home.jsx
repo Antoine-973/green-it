@@ -4,6 +4,11 @@ import interior from '/interior_car.webp';
 import logo from '/logo_2.webp';
 import cruises from '/cruises.webp';
 import night_picture from '/hot_wheels_night.webp';
+import carroussel1 from '/carroussel-1.webp';
+import carroussel2 from '/carroussel-2.webp';
+import carroussel3 from '/carroussel-3.webp';
+import carroussel4 from '/carroussel-4.webp';
+import poster from "/poster.webp";
 
 export function Home() {
         return (
@@ -20,42 +25,44 @@ export function Home() {
                     {/*first section, video*/}
                     <h2 className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
                     <div className={"flex flex-row justify-center align-middle p-20"}>
-                        <video controls className={"rounded-md xs:w-screen md:w-3/4 ws:mx-10"}>
+                        <video
+                            poster={poster}
+                            preload={'none'}  width={1280} height={720} controls className={"rounded-md"}>
                             <source src={videos} type="video/mp4"/>
                         </video>
                     </div>
                     {/*seconde section, carousel*/}
-                    <div className="carousel w-full h-2/3">
+                    <div className="carousel w-3/4 mx-auto">
                         <div id="slide1" className="carousel-item relative w-full">
-                            <img width={1152} height={648} src={cruises} alt={"Image carrousel 1"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel1} alt={"Image carrousel 1"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide4" className="btn btn-circle">❮</a>
-                                <a href="#slide2" className="btn btn-circle">❯</a>
+                                <a href="#slide4" className="btn btn-circle btn-secondary text-white">❮</a>
+                                <a href="#slide2" className="btn btn-circle btn-secondary text-white">❯</a>
                             </div>
                         </div>
                         <div id="slide2" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={interior} alt={"Image carrousel 2"} className="w-full"/>
+                            <img width={1980} height={1319} src={carroussel2} alt={"Image carrousel 2"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide1" className="btn btn-circle">❮</a>
-                                <a href="#slide3" className="btn btn-circle">❯</a>
+                                <a href="#slide1" className="btn btn-circle btn-secondary text-white">❮</a>
+                                <a href="#slide3" className="btn btn-circle btn-secondary text-white">❯</a>
                             </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full">
-                            <img width={1152} height={648} src={cruises} alt={"Image carrousel 3"} className="w-full"/>
+                            <img width={1152} height={648} src={carroussel3} alt={"Image carrousel 3"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide2" className="btn btn-circle">❮</a>
-                                <a href="#slide4" className="btn btn-circle">❯</a>
+                                <a href="#slide2" className="btn btn-circle btn-secondary text-white">❮</a>
+                                <a href="#slide4" className="btn btn-circle btn-secondary text-white">❯</a>
                             </div>
                         </div>
                         <div id="slide4" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={interior} alt={"Image carrousel 4"} className="w-full"/>
+                            <img width={1980} height={1319} src={carroussel4} alt={"Image carrousel 4"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide3" className="btn btn-circle">❮</a>
-                                <a href="#slide1" className="btn btn-circle">❯</a>
+                                <a href="#slide3" className="btn btn-circle btn-secondary text-white">❮</a>
+                                <a href="#slide1" className="btn btn-circle btn-secondary text-white">❯</a>
                             </div>
                         </div>
                     </div>
