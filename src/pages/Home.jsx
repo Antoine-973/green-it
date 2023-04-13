@@ -1,13 +1,16 @@
 import heroImage from '/hero-background.webp';
 import videos from '/home.mp4';
 import '../style/home.css';
-
+import invader from '/invader.webp';
 
 export function Home() {
         return (
             <>
-                <div className={"w-full h-screen"}>
-                    <img src={heroImage} width={'100%'} height={'100%'} alt={'car on top'} className={"w-full h-full object-cover"}/>
+                <div className={"w-full h-screen relative"}>
+                    <div className={"absolute top-1/2 left-1/2 transform translate-x-1/2 translate-y-1/2 z-10 "}>
+                        <h1 className={"flex flex-row text-2xl"}>Roues Chaudes !</h1>
+                    </div>
+                    <img src={heroImage} width={'100%'} height={'100%'} alt={'car on top'} className={"absolute top-0 left-0 w-full h-full object-cover"}/>
                 </div>
                 <div className={"container"}>
                     {/*first section, video*/}
@@ -20,69 +23,9 @@ export function Home() {
                     {/*seconde section, carousel*/}
                     <div className={"container_carousel"}>
                         <section className="carousel" aria-label="Gallery">
-                            <p>This carousel is created with HTML and CSS only.</p>
-                            <ol className="carousel__viewport">
-                                <li id="carousel__slide1"
-                                    tabIndex="0"
-                                    className="carousel__slide">
-                                    <div className="carousel__snapper">
-                                        <a href="#carousel__slide4"
-                                           className="carousel__prev">Go to last slide</a>
-                                        <a href="#carousel__slide2"
-                                           className="carousel__next">Go to next slide</a>
-                                    </div>
-                                </li>
-                                <li id="carousel__slide2"
-                                    tabIndex="0"
-                                    className="carousel__slide">
-                                    <div className="carousel__snapper"></div>
-                                    <a href="#carousel__slide1"
-                                       className="carousel__prev">Go to previous slide</a>
-                                    <a href="#carousel__slide3"
-                                       className="carousel__next">Go to next slide</a>
-                                </li>
-                                <li id="carousel__slide3"
-                                    tabIndex="0"
-                                    className="carousel__slide">
-                                    <div className="carousel__snapper"></div>
-                                    <a href="#carousel__slide2"
-                                       className="carousel__prev">Go to previous slide</a>
-                                    <a href="#carousel__slide4"
-                                       className="carousel__next">Go to next slide</a>
-                                </li>
-                                <li id="carousel__slide4"
-                                    tabIndex="0"
-                                    className="carousel__slide">
-                                    <div className="carousel__snapper"></div>
-                                    <a href="#carousel__slide3"
-                                       className="carousel__prev">Go to previous slide</a>
-                                    <a href="#carousel__slide1"
-                                       className="carousel__next">Go to first slide</a>
-                                </li>
-                            </ol>
-                            <aside className="carousel__navigation">
-                                <ol className="carousel__navigation-list">
-                                    <li className="carousel__navigation-item">
-                                        <a href="#carousel__slide1"
-                                           className="carousel__navigation-button">Go to slide 1</a>
-                                    </li>
-                                    <li className="carousel__navigation-item">
-                                        <a href="#carousel__slide2"
-                                           className="carousel__navigation-button">Go to slide 2</a>
-                                    </li>
-                                    <li className="carousel__navigation-item">
-                                        <a href="#carousel__slide3"
-                                           className="carousel__navigation-button">Go to slide 3</a>
-                                    </li>
-                                    <li className="carousel__navigation-item">
-                                        <a href="#carousel__slide4"
-                                           className="carousel__navigation-button">Go to slide 4</a>
-                                    </li>
-                                </ol>
-                            </aside>
                         </section>
                     </div>
-                    {/*first section, video*/}
+                    {/*section description*/}
                     <div className={"md:flex xs:block md:flex-row justify-between align-middle p-20 bg-gray-900"}>
                         <div>
                             <p className={"text-white mr-10 mb-10"}>
@@ -99,7 +42,31 @@ export function Home() {
                             </picture>
                         </div>
                     </div>
-                    <div className={"flex flex-row align-middle justify-center p-20"}>
+                    {/*section description circuit*/}
+                    <div className={"flex flex-col p-20 text-center justify-center align-middle items-center"}>
+                        <h3 className={"text-2xl"}>
+                            Nos circuits
+                        </h3>
+                        <img src={invader} alt={'circuit example'} width={500}/>
+                    </div>
+                    {/*section description interieur*/}
+                    <div className={"grid grid-cols-2 p-20 text-center justify-center align-middle items-center bg-gray-900"}>
+                        <div >
+                            <h3 className={"text-2xl"}>
+                                Un interieur de qualité
+                            </h3>
+                            <p>
+                                L'intérieur de nos BPO est conçu pour vous offrir le plus grand confort possible.
+                                Toute nos voitures sont équipées de sièges en cuir, de climatisation, de GPS et de
+                                nombreuses autres options.
+                            </p>
+                        </div>
+                        <div className={"flex justify-center align-middle items-center"}>
+                            <img src={invader} alt={'circuit example'} width={500}/>
+                        </div>
+                    </div>
+                    {/*section description texte*/}
+                    <div className={"flex flex-row align-middle justify-center p-20 content_block text-center"}>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque magni vitae voluptatum!
                             Ab assumenda debitis deleniti earum et in magni minus neque quibusdam, quidem, recusandae
