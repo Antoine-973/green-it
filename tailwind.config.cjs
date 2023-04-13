@@ -963,15 +963,5 @@ module.exports = {
       50: '50',
     },
   },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: '#11315A',
-          secondary: '#FD7B07',
-        },
-      },
-    ],
-  },
   plugins: [require("daisyui")],
 }
