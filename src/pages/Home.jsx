@@ -15,26 +15,31 @@ export function Home() {
             <>
                 <div className={"w-full h-screen bg-[url(/hero-background.webp)] bg-cover"}>
                     <div className={"flex items-center h-full"}>
-                        <div className={"container mx-auto px-4"}>
-                            <img src={logo} alt={'logo hot wheels'} width={512} height={288} className={"m-auto"}/>
+                        <div className={"container flex flex-col items-center  mx-auto px-4"}>
+                            <img src={logo} alt={'logo hot wheels'} width={512} height={288} className={"m-auto hover:w-1/2 animation duration-300"}/>
                             <h1 className={"text-center m-auto text-3xl"}>Les meilleurs véhicules disponible dès maintenant !</h1>
+                            <div className={"animate-bounce mt-20 "}>
+                                <a href="#decouverte" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none"
+                                          viewBox="0 0 24 24" stroke-width="1.5"
+                                          stroke="currentColor" className="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
                 <div>
-                    {/*first section, video*/}
-                    <h2 className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
-                    <div className={"flex flex-row justify-center align-middle p-20"}>
-                        <video
-                            poster={poster}
-                            preload={'none'}  width={1280} height={720} controls className={"rounded-md"}>
-                            <source src={videos} type="video/mp4"/>
-                        </video>
-                    </div>
                     {/*seconde section, carousel*/}
-                    <div className="carousel w-3/4 mx-auto">
-                        <div id="slide1" className="carousel-item relative w-full">
-                            <img width={1280} height={720} src={carroussel1} alt={"Image carrousel 1"} className="w-full"/>
+                    <h2 id={"decouverte"} className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
+                    <div className="carousel w-full md:w-3/4 mx-auto">
+                        <div id="slide1" className="carousel-item relative w-full  ">
+                            <img width={1280} height={720} src={carroussel1} alt={"Image  carrousel 1 "} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -42,7 +47,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide2" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={carroussel2} alt={"Image carrousel 2"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel2} alt={"Image carrousel 2"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide1" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -50,7 +55,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full">
-                            <img width={1152} height={648} src={carroussel3} alt={"Image carrousel 3"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel3} alt={"Image carrousel 3"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide2" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -58,7 +63,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide4" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={carroussel4} alt={"Image carrousel 4"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel4} alt={"Image carrousel 4"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide3" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -67,9 +72,10 @@ export function Home() {
                         </div>
                     </div>
                     {/*section description*/}
-                    <div className={"grid grid-cols-1 md:grid-cols-2 p-20 text-center justify-center align-middle items-center"}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 p-4 md:p-20 justify-center align-middle items-center"}>
                         <div>
-                            <p className={"text-white md:mr-10 mb-10 text-center md:text-left"}>
+                            <h3 className={"text-2xl my-6"}>Pour mieux nous connaître</h3>
+                            <p className={"text-white md:mr-10 mb-10 text-left"}>
                                 Bienvenue chez Hot Wheels, le concessionnaire automobile le plus excitant de la ville !<br/> Chez
                                 Hot Wheels, nous sommes fiers de vous offrir une expérience de conduite inoubliable avec
                                 notre gamme de voitures de haute qualité.
@@ -88,38 +94,54 @@ export function Home() {
                             </picture>
                         </div>
                     </div>
-                    {/*section description truck*/}
-                    <div className={"block md:flex md:flex-col p-20 text-center md:justify-center md:align-middle md:items-center"}>
+                    {/*first section, video*/}
+                    <h2 className={"text-2xl text-center my-10"}>Une démonstration de nos modèles</h2>
+                    <div className={"flex flex-row justify-center align-middle "}>
+                        <video
+                            poster={poster}
+                            preload={'none'}  controls className={"rounded-md w-full md:w-3/4"}>
+                            <source src={videos} type="video/mp4"/>
+                        </video>
+                    </div>
+                    {/*section description texte*/}
+                    <div className={"flex flex-col p-4 md:p-20 content_block text-left md:text-justify bg-gray-900 my-6"}>
+                        <h3 className={"text-2xl mb-6"}>
+                            Nos valeurs !
+                        </h3>
+                        <p>
+                            Chez Hot Wheels, nous sommes dévoués à fournir des voitures de qualité
+                            supérieure, fabriquées avec des matériaux de haute qualité pour garantir une longue durée de
+                            vie. Nos voitures sont également équipées de fonctionnalités impressionnantes
+                            telles que des pneus en caoutchouc véritable, des suspensions fonctionnelles et des détails
+                            de carrosserie incroyablement réalistes.
+                        </p>
+                    </div>
+                    {/*section description*/}
+                    <div className={"block md:flex md:flex-col md:p-20 text-center md:justify-center md:align-middle md:items-center"}>
                         <h3 className={"text-2xl mb-6"}>
                             Tester nos voitures sur nos parcours !
                         </h3>
-                        <img src={cruises} width={1152} height={648} alt={'Image circuit'} className={"border border-8 transform rotate-1"}/>
+                        <img src={cruises} width={1152} height={648} alt={'Image circuit'} className={"border border-8 transform duration-300 rotate-1 hover:rotate-2"}/>
                     </div>
                     {/*section description interieur*/}
-                    <div className={"grid grid-cols-1 md:grid-cols-2 p-20 text-center justify-center align-middle items-center bg-gray-900"}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 p-10 md:p-20 text-center justify-center align-middle items-center bg-gray-900"}>
                         <div className={"flex justify-center align-middle items-center"}>
                             <img src={interior} alt={'circuit example'} width={1980} height={1319}/>
                         </div>
                         <div className={"mb-5 md:mb-0"}>
-                            <h3 className={"text-2xl m-4"}>
+                            <h3 className={"text-2xl m-4 md:ml-8 text-left flex"}>
                                 Un interieur de qualité
+                                <span className="relative flex h-3 w-3">
+                                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                  <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                                </span>
                             </h3>
-                            <p>
+                            <p className={"md:ml-8 text-left"}>
                                 L'intérieur de nos Hot Wheels est conçu pour vous offrir le plus grand confort possible.
                                 Toute nos voitures sont équipées de sièges en cuir, de climatisation, de GPS et de
                                 nombreuses autres options.
                             </p>
                         </div>
-                    </div>
-                    {/*section description texte*/}
-                    <div className={"flex flex-col p-20 content_block text-left md:text-justify"}>
-                        <p>
-                            Chez Hot Wheels, nous sommes dévoués à fournir des voitures miniatures de qualité
-                            supérieure, fabriquées avec des matériaux de haute qualité pour garantir une longue durée de
-                            vie. Nos voitures miniatures sont également équipées de fonctionnalités impressionnantes
-                            telles que des pneus en caoutchouc véritable, des suspensions fonctionnelles et des détails
-                            de carrosserie incroyablement réalistes.
-                        </p>
                     </div>
                 </div>
             </>

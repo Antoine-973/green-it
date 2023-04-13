@@ -6,12 +6,12 @@ export default function () {
         <nav className={"fixed w-full m-auto top-0 left-0 z-30  "}>
             <div className={"header-container w-full flex flex-col relative z-30   "} >
 
-                <div className={" flex absolute top-2 md:top-8 md:px-12 lg:container lg:px-6 z-30 "}>
+                <div className={" flex absolute  md:top-8 md:px-12 lg:container lg:px-6 z-30 "}>
 
                     <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                         <a href="/" className={"flex flex-row items-center justify-between"}>
                             <img src={logo} width={100} alt={"Logo de roue chaude"} className={"mr-5"}/>
-                            <span className="font-semibold text-2xl tracking-tight">Roues Chaudes</span>
+                            <span className="hidden sm:block font-semibold text-2xl tracking-tight">Roues Chaudes</span>
                         </a>
                     </div>
 
