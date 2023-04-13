@@ -16,11 +16,11 @@ export function Home() {
                         </div>
                     </div>
                 </div>
-                <div className={"container"}>
+                <div>
                     {/*first section, video*/}
                     <h2 className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
                     <div className={"flex flex-row justify-center align-middle p-20"}>
-                        <video controls className={"xs:w-screen md:w-3/4 ws:mx-10"}>
+                        <video controls className={"rounded-md xs:w-screen md:w-3/4 ws:mx-10"}>
                             <source src={videos} type="video/mp4"/>
                         </video>
                     </div>

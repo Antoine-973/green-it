@@ -15,10 +15,10 @@ export default function () {
                         </a>
                     </div>
 
-                    <div className="hidden lg:block  w-full flex-grow lg:flex lg:items-center lg:w-auto text-teal-200 ">
+                    <div className="hidden lg:block  w-full flex-grow lg:flex lg:items-center lg:w-auto text-white">
                         <div className="text-sm lg:flex-grow">
                             <a href="/products"
-                               className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
+                               className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mx-4 text-xl">
                                 Voitures
                             </a>
                         </div>
@@ -79,8 +79,8 @@ export default function () {
 
                 {/*The bottom blue border*/}
                 <div className={"z-20 overflow-x-hidden"}>
-                    <div className={"absolute w-full top-0 bg-primary h-16 lg:h-8 opacity-60 "}>
-                        <div className={"absolute w-full top-16 lg:top-8 bg-primary opacity-60  overflow-x-hidden "}>
+                    <div className={"absolute w-full top-0  h-16 top-0 bg-primary bg-opacity-60 "}>
+                        <div className={"absolute w-full pt-8 top-0  opacity-60  overflow-x-hidden "}>
                             <svg   viewBox="0 0 2560 156" version="1.1" className={"max-w-full"}
                                    xmlns="http://www.w3.org/2000/svg">
 
@@ -90,7 +90,7 @@ export default function () {
                                     <path
                                         d="M0,146 L2471.27974,146 C2473.9319,146 2476.47544,144.946432 2478.35081,143.071068 L2520.49294,100.928932 C2522.36831,99.0535684 2524.91185,98 2527.56401,98 L2560,98 L2560,98"
                                         id="Path-3"
-                                        stroke="#007aff"
+                                        stroke="cyan"
                                         stroke-width="1.27226463"></path>
                                 </g>
                             </svg>
