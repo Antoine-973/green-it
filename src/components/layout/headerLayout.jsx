@@ -10,8 +10,8 @@ export default function () {
 
                     <div className="flex items-center flex-shrink-0 text-white mr-6 gap-8">
                         <a href="/" className={"flex flex-row items-center justify-between"}>
-                            <img src={logo} width={128} height={72} alt={"Logo de roue chaude"} className={"mr-5"}/>
-                            <span className="font-semibold text-xl tracking-tight">Roues Chaudes</span>
+                            <img src={logo} width={100} alt={"Logo de roue chaude"} className={"mr-5"}/>
+                            <span className="font-semibold text-2xl tracking-tight">Roues Chaudes</span>
                         </a>
                     </div>
 
@@ -79,7 +79,7 @@ export default function () {
 
                 {/*The bottom blue border*/}
                 <div className={"z-20 overflow-x-hidden"}>
-                    <div className={"absolute w-full top-0  h-16 top-0 bg-primary bg-opacity-60 "}>
+                    <div className={"absolute w-full top-0  h-8 top-0 bg-primary bg-opacity-60 "}>
                         <div className={"absolute w-full pt-8 top-0  opacity-60  overflow-x-hidden "}>
                             <svg   viewBox="0 0 2560 156" version="1.1" className={"max-w-full"}
                                    xmlns="http://www.w3.org/2000/svg">
