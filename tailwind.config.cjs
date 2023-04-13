@@ -754,6 +754,7 @@ module.exports = {
       150: '1.5',
     },
     screens: {
+      xs: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -962,5 +963,5 @@ module.exports = {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
