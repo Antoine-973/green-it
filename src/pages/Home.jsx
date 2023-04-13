@@ -8,6 +8,7 @@ import carroussel1 from '/carroussel-1.webp';
 import carroussel2 from '/carroussel-2.webp';
 import carroussel3 from '/carroussel-3.webp';
 import carroussel4 from '/carroussel-4.webp';
+import poster from "/poster.webp";
 
 export function Home() {
         return (
@@ -24,7 +25,9 @@ export function Home() {
                     {/*first section, video*/}
                     <h2 className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
                     <div className={"flex flex-row justify-center align-middle p-20"}>
-                        <video controls className={"rounded-md xs:w-screen md:w-3/4 ws:mx-10"}>
+                        <video
+                            poster={poster}
+                            preload={'none'}  width={1280} height={720} controls className={"rounded-md"}>
                             <source src={videos} type="video/mp4"/>
                         </video>
                     </div>
