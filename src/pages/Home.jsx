@@ -28,7 +28,7 @@ export function Home() {
                     {/*seconde section, carousel*/}
                     <div className="carousel w-full h-2/3">
                         <div id="slide1" className="carousel-item relative w-full">
-                            <img src={cruises} className="w-full"/>
+                            <img src={cruises} alt={"Image carrousel 1"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" className="btn btn-circle">❮</a>
@@ -36,7 +36,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide2" className="carousel-item relative w-full">
-                            <img src={interior} className="w-full"/>
+                            <img src={interior} alt={"Image carrousel 2"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide1" className="btn btn-circle">❮</a>
@@ -44,7 +44,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full">
-                            <img src={cruises} className="w-full"/>
+                            <img src={cruises} alt={"Image carrousel 3"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide2" className="btn btn-circle">❮</a>
@@ -52,7 +52,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide4" className="carousel-item relative w-full">
-                            <img src={interior} className="w-full"/>
+                            <img src={interior} alt={"Image carrousel 4"} className="w-full"/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide3" className="btn btn-circle">❮</a>
@@ -78,7 +78,7 @@ export function Home() {
                             <picture>
                                 {/*<source srcSet={night_picture} type="image/jpg" media={"(min-width: 1200px)"}/>*/}
                                 {/*<source srcSet={night_picture} type="image/jpg" media={"(min-width: 600px)"}/>*/}
-                                <img src={night_picture} alt={'test'} className={"w-full"}/>
+                                <img src={night_picture} alt={'Photo de nuit voiture'} className={"w-full"}/>
                             </picture>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ export function Home() {
                         <h3 className={"text-2xl mb-6"}>
                             Tester nos voitures sur nos parcours !
                         </h3>
-                        <img src={cruises} width={800} alt={'circuit example'} className={"border border-8 transform rotate-1"}/>
+                        <img src={cruises} width={800} alt={'Image circuit'} className={"border border-8 transform rotate-1"}/>
                     </div>
                     {/*section description interieur*/}
                     <div className={"grid grid-cols-1 md:grid-cols-2 p-20 text-center justify-center align-middle items-center bg-gray-900"}>
