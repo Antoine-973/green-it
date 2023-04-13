@@ -2,7 +2,7 @@ import logo from "/hot_wheels_logo.webp";
 export default function () {
 
     return(
-        <nav className={"fixed w-full m-auto top-0 left-0 z-30  "}>
+        <nav className={"fixed w-full bg-primary h-32 bg-opacity-40 m-auto top-0 left-0 z-30  "}>
             <div className={"header-container w-full flex flex-col relative z-30   "} >
 
                 <div className={" flex absolute top-8 md:px-12 lg:container lg:px-6 z-30 "}>
@@ -75,28 +75,6 @@ export default function () {
                         </div>
                     </div>
                 </div>
-
-                {/*The bottom blue border*/}
-                <div className={"z-20 overflow-x-hidden"}>
-                    <div className={"absolute w-full top-0 bg-primary h-16 lg:h-8 opacity-60 "}>
-                        <div className={"absolute w-full top-16 lg:top-8 bg-primary opacity-60  overflow-x-hidden "}>
-                            <svg   viewBox="0 0 2560 156" version="1.1" className={"max-w-full"}
-                                   xmlns="http://www.w3.org/2000/svg">
-
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <polygon fill="#11315A"
-                                             points="0 0 2560 0 2560 99.1180705 2523.42188 98 2475.42188 146 0 146"></polygon>
-                                    <path
-                                        d="M0,146 L2471.27974,146 C2473.9319,146 2476.47544,144.946432 2478.35081,143.071068 L2520.49294,100.928932 C2522.36831,99.0535684 2524.91185,98 2527.56401,98 L2560,98 L2560,98"
-                                        id="Path-3"
-                                        stroke="#007aff"
-                                        stroke-width="1.27226463"></path>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </nav>
     )
