@@ -1,6 +1,6 @@
 export default function () {
     return(
-        <footer className={"py-4 "}>
+        <footer className={"pb-4"}>
             <div className={"container mx-auto px-4"}>
                 <div className={"flex items-center justify-between border-t pt-4 w-full  px-4"}>
                     <div className={"text-sm flex items-center flex-row text-white font-semibold py-1 text-center md:text-left "}>

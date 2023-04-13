@@ -9,7 +9,7 @@ import night_picture from '/hot_wheels_night.webp';
 export function Home() {
         return (
             <>
-                <div className={"w-full h-screen  bg-[url(/hero-background.webp)] bg-cover"}>
+                <div className={"w-full h-screen bg-[url(/hero-background.webp)] bg-cover"}>
                     <div className={"flex items-center h-full"}>
                         <div className={"container mx-auto px-4"}>
                             <img src={logo} alt={'logo hot wheels'} width={300} className={"m-auto"}/>

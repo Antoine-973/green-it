@@ -22,12 +22,6 @@ export default function () {
                             </a>
                         </div>
                     </div>
-
-                    <div className={"hidden lg:block "}>
-                        <a href="/achat" className={"block px-4 py-2 btn-clip bg-secondary text-white text-center"} >
-                            Acheter maintenant
-                        </a>
-                    </div>
                 </div>
 
                 <div className="absolute top-8  z-30 w-full lg:hidden">
