@@ -230,3 +230,10 @@ ol, li {
 .content_block{
     min-height: 40vh;
 }
+
+.centered_absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
