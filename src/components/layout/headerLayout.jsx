@@ -3,7 +3,7 @@ export default function () {
 
     return(
         <nav className={"fixed w-full m-auto top-0 left-0 z-30  "}>
-            <div className={"header-container w-full flex flex-col relative z-30  "} >
+            <div className={"header-container w-full flex flex-col relative z-30   "} >
 
                 <div className={" flex absolute top-8 md:px-12 lg:container lg:px-6 z-30 "}>
 
@@ -62,11 +62,11 @@ export default function () {
                         </div>
                     </div>
                 </div>
-                <div className={"z-20"}>
+                <div className={"z-20 overflow-x-hidden"}>
                     <div className={"absolute w-full top-0 bg-primary h-16 lg:h-8 opacity-60 "}>
 
                     </div>
-                    <div className={"absolute w-full top-16 lg:top-8 "}>
+                    <div className={"absolute w-full top-16 lg:top-8  overflow-x-hidden "}>
                         <svg   viewBox="0 0 2560 156" version="1.1" className={"max-w-full"}
                                xmlns="http://www.w3.org/2000/svg">
 
