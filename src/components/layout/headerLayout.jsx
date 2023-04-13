@@ -79,7 +79,7 @@ export default function () {
                 {/*The bottom blue border*/}
                 <div className={"z-20 overflow-x-hidden"}>
                     <div className={"absolute w-full top-0  h-16 top-0 bg-primary bg-opacity-60 "}>
-                        <div className={"absolute w-full pt-16 top-0  opacity-60  overflow-x-hidden "}>
+                        <div className={"absolute w-full pt-8 top-0  opacity-60  overflow-x-hidden "}>
                             <svg   viewBox="0 0 2560 156" version="1.1" className={"max-w-full"}
                                    xmlns="http://www.w3.org/2000/svg">
 
