@@ -15,18 +15,31 @@ export function Home() {
             <>
                 <div className={"w-full h-screen bg-[url(/hero-background.webp)] bg-cover"}>
                     <div className={"flex items-center h-full"}>
-                        <div className={"container mx-auto px-4"}>
-                            <img src={logo} alt={'logo hot wheels'} width={512} height={288} className={"m-auto"}/>
+                        <div className={"container flex flex-col items-center  mx-auto px-4"}>
+                            <img src={logo} alt={'logo hot wheels'} width={512} height={288} className={"m-auto hover:w-1/2 animation duration-300"}/>
                             <h1 className={"text-center m-auto text-3xl"}>Les meilleurs véhicules disponible dès maintenant !</h1>
+                            <div className={"animate-bounce mt-20 "}>
+                                <a href="#decouverte" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none"
+                                          viewBox="0 0 24 24" stroke-width="1.5"
+                                          stroke="currentColor" className="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                              d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+                                    </svg>
+                                </a>
+
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
                 <div>
                     {/*seconde section, carousel*/}
-                    <h2 className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
+                    <h2 id={"decouverte"} className={"text-2xl text-center my-10"}> Découvrez nos nouvelles Roues Chaudes !</h2>
                     <div className="carousel w-full md:w-3/4 mx-auto">
-                        <div id="slide1" className="carousel-item relative w-full">
-                            <img width={1280} height={720} src={carroussel1} alt={"Image carrousel 1"} className="w-full"/>
+                        <div id="slide1" className="carousel-item relative w-full  ">
+                            <img width={1280} height={720} src={carroussel1} alt={"Image  carrousel 1 "} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -34,7 +47,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide2" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={carroussel2} alt={"Image carrousel 2"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel2} alt={"Image carrousel 2"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide1" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -42,7 +55,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide3" className="carousel-item relative w-full">
-                            <img width={1152} height={648} src={carroussel3} alt={"Image carrousel 3"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel3} alt={"Image carrousel 3"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide2" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -50,7 +63,7 @@ export function Home() {
                             </div>
                         </div>
                         <div id="slide4" className="carousel-item relative w-full">
-                            <img width={1980} height={1319} src={carroussel4} alt={"Image carrousel 4"} className="w-full"/>
+                            <img width={1280} height={720} src={carroussel4} alt={"Image carrousel 4"} className={"border border-8 "}/>
                             <div
                                 className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide3" className="btn btn-circle btn-secondary text-white">❮</a>
@@ -108,7 +121,7 @@ export function Home() {
                         <h3 className={"text-2xl mb-6"}>
                             Tester nos voitures sur nos parcours !
                         </h3>
-                        <img src={cruises} width={1152} height={648} alt={'Image circuit'} className={"border border-8 transform rotate-1"}/>
+                        <img src={cruises} width={1152} height={648} alt={'Image circuit'} className={"border border-8 transform duration-300 rotate-1 hover:rotate-2"}/>
                     </div>
                     {/*section description interieur*/}
                     <div className={"grid grid-cols-1 md:grid-cols-2 p-10 md:p-20 text-center justify-center align-middle items-center bg-gray-900"}>
@@ -116,8 +129,12 @@ export function Home() {
                             <img src={interior} alt={'circuit example'} width={1980} height={1319}/>
                         </div>
                         <div className={"mb-5 md:mb-0"}>
-                            <h3 className={"text-2xl m-4 md:ml-8 text-left"}>
+                            <h3 className={"text-2xl m-4 md:ml-8 text-left flex"}>
                                 Un interieur de qualité
+                                <span className="relative flex h-3 w-3">
+                                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                  <span className="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+                                </span>
                             </h3>
                             <p className={"md:ml-8 text-left"}>
                                 L'intérieur de nos Hot Wheels est conçu pour vous offrir le plus grand confort possible.
